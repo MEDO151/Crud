@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Crud</title>
+</head>
+<body> 
+    <div class=" container mt-5" id="container">
+        <label for="ProductName" class="mb-2" >Product Name:</label>
+        <input class="form-control mb-4 " type="text" id="ProductName" placeholder="Product Name">
+
+        <label for="ProductPrice" class="mb-2">Product Price:</label>
+        <input class="form-control mb-4" type="number" id="ProductPrice" placeholder="Product price">
+
+        <label for="ProductCategory" class="mb-2">Product Category:</label>
+        <input class="form-control mb-4" type="text" id="ProductCategory" placeholder="Product Category">
+
+        <label for="ProductDesc" class="mb-2">Product Desc</label>
+        <textarea class="form-control mb-4" name="" id="ProductDesc" placeholder="Product Desc"></textarea>
+
+        <button onclick="AddProduct() " class="btn btn-outline-success" id="btn" >Add Product</button>
+        <button onclick="updateProduct()" class="btn btn-outline-warning d-none" id="btn1">Update Product</button>
+
+        <input onkeyup="searchProducts()" id="inputSearch" class="form-control mt-5 w-50 m-auto " type="text" placeholder="Search...">
+        <table class="table-striped table text-center mt-5">
+            <thead id="thead">
+                
+            </thead>
+            <tbody id="tbody">
+                
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+</html>
